@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <body>
+    <input type="text" id="arrayInput" placeholder="1,2,3,4,5">
+    <button onclick="takeInput()">Show array here</button>
+    <p id="result"></p>
+    <hr>
+     
+     
+    <h3>Min max</h3>
+    <input type="text" id="vm">
+    <p id="max"></p>
+    <p id="min"></p>
+    <button onclick="findminmax();">Show array here</button>
+
+    <h3>Filtering Array</h3>
+      <input type="text" placeholder="Enter Number" id="tarray">
+      <button id="fa" onclick="filter();">Filter</button>
+      <p id="filterres"></p>
+      <hr>
+
+    <h3>Array Sorting</h3>
+    <input type="text" placeholder="Enter Number to sort" id="asvalue">
+    <button onclick="as();">Sort</button>
+    <p id="asresult1"></p>
+    <p id="asresult2"></p>
+    <hr>
+  
+    <h3>Reverse a Array</h3>
+    <input type="text" placeholder="Enter Numbers to Reverse" id="areverse">
+    <button onclick="areverse();">Sort</button>
+    <p id="areverseres"></p>
+  
+    <script>
+  {
+    function sumOfArray(arr)
+    {
+      Sum=0;
+      len=arr.length;
+      for(let i=0;i<len;i++)
+      {
+        Sum += Number(arr[i]);
+      }
+      return Sum;
+    }
+  }
+    function takeInput()
+  {
+    string1= document.getElementById('arrayInput').value;
+    arr1=string1.split(',');
+    // console.log(arr1);
+    sumofArr=sumOfArray(arr1);
+    document.getElementById('result').innerHTML=sumofArr;
+  }
+
+   
+//   maxmin
+  function findminmax(){
+    string2 = document.getElementById("vm").value;
+    Arr2 = string2.split(',');
+    max = 0;
+    min = Arr2[1];
+    for(var i=0;i<Arr2.length;i++){
+        if(Arr2[i]>max){
+            max = Arr2[i];
+        }
+    }
+    document.getElementById('max').innerHTML = 'Max :'+ max;
+
+    for(var i=0;i<Arr2.length;i++){ 
+        if(Arr2[i]<min){
+            min = Arr2[i];
+        }
+    document.getElementById('min').innerHTML ='Min:'+min;
+   }
+  }
+
+// foreachall
+      let arr = ["apple", "mango",
+		"apple", "orange", "mango", "mango"];
+
+  function removeDuplicates(arr) {
+	    let unique = [];
+	      arr.forEach(element => {
+	      	if (!unique.includes(element)) {
+		      	unique.push(element);
+		      }
+	      });
+	    return unique;
+    }
+    console.log(removeDuplicates(arr));
+
+
+    // filtering
+    function filter(){
+    let numbers = document.getElementById("tarray").value;
+    let arr3  = numbers.split(",");
+    let un = arr3.filter(function(value,index,array){
+        return array.indexOf(value) === index;
+    });
+    document.getElementById('filterres').innerHTML = un;
+    }
+
+    // Filter Code without using filter
+  // #include<iostream>
+  // using namespace std;
+  // int main ()
+  // {
+  //   int A[10], B[10], n, i, j, k = 0;
+  //   cout << "Enter size of array : ";
+  //   cin >> n;
+  //   cout << "Enter elements of array : ";
+  //   for (i = 0; i < n; i++)
+  //       cin >> A[i];    
+  //   for (i = 0; i < n; i++)
+  //   {
+  //       for (j = 0; j < k; j++)
+  //       {
+  //           if (A[i] == B[j])
+  //               break;
+  //       }
+  //       if (j == k)
+  //       {
+  //           B[k] = A[i];
+  //           k++;
+  //       }
+  //   }
+  //   cout << "Repeated elements after deletion : ";
+  //   for (i = 0; i < k; i++)
+  //       cout << B[i] << " ";
+  //   return 0; }
+    
+
+
+
+
+
+    </script>
+    </body>
+</html>
