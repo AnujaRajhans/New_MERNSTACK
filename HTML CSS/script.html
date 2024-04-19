@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gradcontainer" id="display"></div>
+        <div class="selection">
+            <div class="colorinput">
+                <input type="color" id="c1">
+                <input type="color" id="c2">
+                <select name="" id="gradtype">
+                    <option value="linear-gradient">linear-gradient</option>
+                    <option value="radial-gradient">radial-gradient</option>
+                    <option value="conical-gradient">conical-gradient</option>
+                </select>
+            </div>
+            <button onclick="LG()">click here to change the color</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('display').style.backgroundColor='red';
+        function LG(){
+            a1= document.getElementById('c1').value;
+            a2= document.getElementById('c2').value;
+            gradt=document.getElementById('gradtype').value;
+            if(gradt== 'linear-gradient'){
+                document.getElementById('display').style.backgroundImage=`linear-gradient(${a1},${a2})`;
+            }
+            else if(gradt== 'conical-gradient'){
+                document.getElementById('display').style.backgroundImage=`conic-gradient(${a1},${a2})`;
+            }
+            else{
+                document.getElementById('display').style.backgroundImage=`radial-gradient(${a1},${a2})`; 
+            }
+        }
+
+    </script>
+</body>
+</html>

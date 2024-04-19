@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .Container1{
+        border: 1px solid black;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: 100px 100px 100px 100px;
+        row-gap: 20px;
+        column-gap: 5px;
+    }
+    .Boxx{
+        border: 1px solid brown;
+        padding: 12px;
+    }
+    #one{
+        background-color: aquamarine;
+    }
+    #three{
+        background-color: blueviolet;
+        grid-area: 1/-3/-2/5;
+    }
+    #four{
+        background-color: blue;
+        grid-area: 2/1/4/3;
+    }
+    #two{
+        background-color: pink; 
+    }
+    #five{
+        background-color: greenyellow;
+        grid-area: 4/1/-5/3;
+    }
+</style>
+<body>
+    <div class="Container1">
+        <div class="Boxx" id="one">Boxx1</div>
+        <div class="Boxx" id="two">Boxx2</div>
+        <div class="Boxx" id="three">Boxx3</div>
+        <div class="Boxx" id="four">Boxx4</div>
+        <div class="Boxx" id="five">Boxx5</div>
+        <div class="Boxx" id="six">Boxx6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    border: 1px solid black;
+    align-content: center;
+}
+.header{
+    border: 1px solid black;
+    height: 100px;
+    background-color: orangered;
+    margin: 10px;
+    text-align: center;
+}
+.aside1{
+    border: 1px solid black;
+    height: 210px;
+    background-color: yellow;
+    width: 260px;
+    margin: 10px;
+    text-align: center;
+}
+.main{
+    border: 1px solid black;
+    height: 100px;
+    background-color: dodgerblue;
+    text-align: center;
+    margin: 10px;
+}
+.aside2{
+    border: 1px solid black;
+    height: 100px;
+    background-color: deeppink;
+    margin: 10px;
+}
+.footer{
+    border: 1px solid black;
+    height: 100px;
+    background-color: green;
+    margin: 10px;
+}

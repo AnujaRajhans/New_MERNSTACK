@@ -1,0 +1,187 @@
+.container{
+    border: 1px solid black;
+    background-color: bisque;
+    height: 500px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns:  100px 100px 100px 100px 100px 100px ;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    justify-content: center;
+    align-content: space-around;
+    justify-content: space-around;
+}
+.box{
+    padding: 20px;
+    background-color: burlywood;
+}
+#box-1{
+    grid-area: 1/1/1/1;
+}
+#box-3{
+    grid-area: 2/1/3/2;
+}
+#box-5{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#box-7{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+#box-10{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+#box-11{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+#box-12{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+#box-13{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+#box-14{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+#box-15{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+#box-2{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: -6;
+    grid-row-end: -5;
+}
+#box-4{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: -5;
+    grid-row-end: -4;
+}
+#box-6{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: -4;
+    grid-row-end: -3;
+}
+#box-9{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: -3;
+    grid-row-end: -2;
+}
+#box-8{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.container2 {
+    border: 1px solid black;
+    background-color: cornsilk;
+    height: 500px;
+    display: grid;
+    margin: 20px;
+    row-gap: 30px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px;
+    justify-content: start;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.boxtwo:hover{
+    transform: scale(1.5);
+
+}
+.boxtwo{
+    padding: 50px;
+    background-color:darkkhaki;
+    transition: 1s ease;
+}
+#Box1{
+    grid-area: 1/1/1/1;
+    background-image: url(img/Tallest-Building-in-Pune.jpg);
+}
+#Box2{
+    background-image: url(img/Aga_Khan_Bridge_in_Pune.jpg);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+#Box3{
+    background-image: url(img/65395942.webp);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#Box4{
+    background-image: url(img/download.jpg);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#Box5{
+    background-image: url(img/Aga-Khan-Palace-Pune-India.webp);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#Box6{
+    background-image: url(./img/Pune\ street\ tree\ motorbike\ traffic.webp);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#Box7{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url(./img/istockphoto-1372538338-612x612.jpg);
+}
+#Box8{
+    background-image: url(./img/Investment-in-Pune-Real.jpg);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#Box9{
+    background-image: url(./img/images.jpeg);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+

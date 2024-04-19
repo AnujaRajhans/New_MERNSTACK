@@ -1,0 +1,31 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.first{
+    margin: 10px;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+}
+.first i{
+    color: aliceblue;
+    position: absolute;
+    font-size: 20px;
+    top: 30px;
+    left: 180px; 
+}
+.first h6{
+    color: aliceblue;
+    position: absolute;
+    font-size: 20px;
+    top: 30px;
+    left: 210px;
+}
+.image{
+    display: flex;
+}
+.text{
+    color: aliceblue;
+}

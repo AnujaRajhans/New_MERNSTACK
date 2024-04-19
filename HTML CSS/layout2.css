@@ -1,0 +1,43 @@
+.Main{
+    border: 1px solid black;
+    ht,wt
+   
+}
+.Head{
+    border: 1px solid black;
+    height: 100px;
+    margin
+}
+.NavMenu{
+    border: 1px solid black;
+    height: 100px;
+    margin
+}
+.Mid{
+    border: 1px solid black;
+    height: 150px;
+    display flex
+    width: 39%;
+    justifycontent
+}
+.Content1{
+    border: 1px solid black;
+    height: 200px;
+    width: 20%;
+    margin
+}
+.MainContent{
+    border,ht,wt.margin
+}
+.Content2{
+    border: 1px solid black;
+    height: 200px;
+    width: 20%;
+    margin
+}
+.Footer{
+    border: 1px solid black;
+    height: 100px;
+    text-align: center;
+    margin: ;
+}

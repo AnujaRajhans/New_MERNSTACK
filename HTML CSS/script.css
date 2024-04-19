@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.container{
+    border: 1px solid black;
+    height: 400px;
+    width: 500px;
+    margin-top: 4px;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.gradcontainer{
+    border: 1px solid black;
+    position: relative;
+    height: 200px;
+    width: 400px;
+}
+.selection{
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}

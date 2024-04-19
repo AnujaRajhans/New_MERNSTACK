@@ -1,0 +1,56 @@
+.main{
+    border: 2px solid black;
+    height: 590px;
+    width: 50%;
+}
+.head{
+    border: 2px solid black;
+    height: 80px;
+    margin: 2px;
+}
+.nav{
+    border: 2px solid black;
+    height: 80px;
+    margin: 2px;
+}
+.mid{
+    height: 56%;
+    display: flex;
+    justify-content: flex-start;
+}
+.con1{
+    border: 2px solid black;
+    height: 98%;
+    margin: 2px;
+    width: 26%;
+}
+.maincon{
+    border: 2px solid black;
+    height: 98%;
+    width: 80%;
+    margin: 2px;
+}
+.con2{
+    border: 2px solid black;
+    height: 98%;
+    margin: 2px;
+    width: 26%;
+}
+.foot{
+    border: 2px solid black;
+    height: 80px;
+    margin: 2px;
+}
+p{
+    text-align: center;
+    color: green;
+}
+.con1 p{
+    margin-top: 130px;
+}
+.con2 p{
+    margin-top: 130px;
+}
+.maincon p{
+    margin-top: 130px;
+}

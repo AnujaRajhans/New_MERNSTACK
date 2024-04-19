@@ -1,0 +1,25 @@
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    width: 60%;
+    text-align: center;
+    margin: 2px auto ;
+}
+th{
+    font-size: larger;
+    background-color: burlywood;
+}
+td{
+    font-size: large;
+}
+tr{
+    height: 70px;
+}
+tr:nth-child(odd) {
+    background-color: cornsilk;
+}
+.overflow{
+    overflow-y: scroll;
+}

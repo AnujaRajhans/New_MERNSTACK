@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ovrOne {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            overflow: auto;
+        }
+        sup 
+        {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <picture>
+        <source media="(min-width:850px)" srcset="./Images/bgImage.jpg">
+        <source media="(min-width:450px)" srcset="./Images/natureImage.jpg">
+        <img src="./Images/logo.jpg" alt="No shown">
+    </picture>
+
+    <div class="ovrOne">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste optio, aliquid temporibus rem,
+        corrupti illo, esse unde eveniet incidunt atque at? Perspiciatis est a vitae quia, quis praesentium, corporis
+        expedita et consectetur, corrupti sit rem id illo in dolorum voluptatum nobis! Eaque odit iusto dolorem amet
+        voluptates inventore. Laborum cupiditate veniam quae quia? Debitis, tempore officia dolore amet tempora
+        repudiandae.</div>
+    <hr>
+    <h1>Form</h1>
+
+<form action="" method="">
+    <label for="fname">First Name<sup>*</sup>:</label>
+    <input type="text" id="fname" name="fname" required><br>
+    <label for="lname">Last Name<sup>*</sup>:</label>
+    <input id="lname" name="lname" required><br>
+    <label for>Contact Number<sup>*</sup></label>
+    <input type="text"><br>
+    <label>Pincode<sup>*</sup>:</label>
+    <input type="number" name="'pincode">
+    <label>password<sup>*</sup>:</label>
+    <input type="password" name="password">
+    <label>DOB<sup>*</sup>:</label>
+    <input type="date" name="dob">
+    <br>
+    <label>Address</label>
+    <textarea></textarea>
+    <button onclick="return greeting();">Click me to submit</button>
+    <input type="submit">
+    <input type="reset">
+<div id="result" style="font-size: xx-large;"></div>
+</form>
+
+<script>
+    function greeting() {
+       fname = document.getElementById('fname').value;
+       lname = document.getElementById('lname').value;
+        document.getElementById('result').innerHTML = 'WelCome ' +fname + ' ' + lname;
+        return false;
+    }
+</script>
+
+
+
+</body>
+
+</html>

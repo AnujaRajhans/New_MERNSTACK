@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+.filter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:1;
+    opacity: .7;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(207,79,232,1) 0%, rgba(0,212,255,1) 100%);
+}
+table{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    text-align: center;
+    background: #fafafa;
+}
+th{
+    background: #ba68c8;
+}
