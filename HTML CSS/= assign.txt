@@ -1,0 +1,53 @@
+= assign
+== redfine
+=== compare w datatype
+
+
+arguments and parameters
+function submit(x,y)=(x,y)parameters
+ return(x+y);
+}
+submit(1,1)= (1,1)=value
+
+
+
+array methods-- 
+split
+loop
+slice
+forEach-by assesing index position
+max,min
+reverse
+
+what is js object?
+key value
+arr[]={[id:1]}
+
+
+
+    empcomm=[];
+    function showcomm(){
+        var totalPrice=0;
+        smartp = document.getElementById('cartt');
+        smartp.innerHTML('');
+        empcomm.forEach(element => {
+            NewData=document.createElement('div');
+            NewData.innerHTML=`<h4>Name:${element.name}</h4> 
+            <p>Price:${element.price}</p>`;
+                smartp.appendChild(NewData);
+                totalPrice += element.price;
+                document.getElementById("ct").innerHTML=totalPrice;
+          });
+        }
+
+        function AddToCart(id){    
+            addedcart = product.find(p=>p.id===id);
+            empcomm.push(addedcart);
+            console.log(empcomm.length);
+            document.getElementById("count").innerHTML = empcomm.length;
+            showcomm();
+          }
+
+
+
+Q8vhYgxwC2iffcD
