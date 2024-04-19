@@ -1,0 +1,18 @@
+<!-- object theory -->
+    person.name person['name']
+    const person={'anuja'};
+    person adresss= new address
+    arr1[]
+    to do list add update create delete
+    dom
+    taskmnager
+      phone:748939387
+      address:'pune'
+      name1:'xyz';
+      email:hghgh@gmail.com
+  
+dom element in obejct adds del update create
+document object model=  it converts and allows to modify elm in js in dynamic manner on webpage
+it represnts tree like structure in html xml where each node respresnts object also can handle events
+text node-titlr
+elem node-body
