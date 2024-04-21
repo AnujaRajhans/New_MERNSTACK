@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="adv.css">
+</head>
+<body>
+    <div  class="container">
+        <p id="Hour"></p>
+        <p id="Min"></p>
+        <p id="Sec"></p>
+    </div>
+    <script>
+        setInterval(()=>{
+        const a = new Date();
+        let seconds = a.getSeconds();
+        const b = new Date();
+        let minutes = b.getMinutes();
+        const c = new Date();
+        let hour = c.getHours();
+        document.getElementById("Min").innerHTML ='Min:'+ minutes;6
+        document.getElementById("Sec").innerHTML ='Sec:'+ seconds;
+        document.getElementById("Hour").innerHTML ='Hour:'+ hour;
+        },1000)
+    </script>
+</body>
+</html>
