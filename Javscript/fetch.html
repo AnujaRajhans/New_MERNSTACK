@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fetchdata(){
+            return new Promise(function(resolve,reject)
+            {
+                fetch('https://api.quotable.io/random')
+                .then(response => response.json())
+                .then(data => resolve(data))
+                .catch( error => reject(error));
+            });
+        }
+        fetchdata()
+            .then(data=> console.log('Data fetched :',data))
+            .catch(error => console.log('error :',error));
+    </script>
+    
+
+</body>
+</html>
