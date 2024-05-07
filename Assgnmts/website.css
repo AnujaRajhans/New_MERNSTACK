@@ -1,0 +1,123 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.dog{
+    background-image: url(my_projects/img/dog.jpg);
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20%;
+}
+.navbar li{
+    padding: 0px 26px;
+    display: inline-block;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 200px;
+    width: 400px;
+    font-size: 60px;
+    position: relative;
+    left: 260px;
+    align-items: center;
+    justify-content: center;
+    color: #00484f;
+}
+text,p{
+    font-size: 30px;
+    color: #0c71c3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+text,button{
+    background-color: orange;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+}
+button:hover{
+    background-color: goldenrod;
+    transition: 0.3s ease 0s;
+}
+.grid_items{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.img img{
+    width: 300px;
+    height: 200px;
+}
+.Card{
+    margin: 10px;
+    border-bottom: 1px solid black;
+    max-width: 360px;
+    height: 500px;
+    padding: 10px 30px;
+    background-color: aliceblue;
+    left: 50px;
+    box-shadow: 4px 4px 4px rgb(159, 158, 158);
+}
+.pp,p{
+    font-size:medium;
+}
+.items{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+.icons{
+    color: orange;
+    bottom: 20px;
+}
+.icons:hover{
+    color: violet;
+}
+h3{
+    color: black;
+}
+.categories
+{   margin-top: 20px;
+    font-size: larger;
+    color: orange;
+    font-family:'Times New Roman', Times, serif;
+}
+.categories ul li{
+    font-size:20px;
+    list-style: none;
+}
+.Search{
+    padding: 50px;
+    width: 100px;
+    height: 100px;
+}
+.siteresources{
+    color: orange;
+    font-size: larger;
+}
+footer{
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 2px solid #eeeef3;
+}
