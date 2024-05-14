@@ -1,0 +1,80 @@
+.Unoredered{
+    background-color: beige;
+}
+.Grades,th,td,tr,table{
+    border: 1px solid black;
+    border-collapse: collapse ;
+}
+.Grades tr:nth-child(even){
+    background-color: burlywood;
+}
+li{
+    list-style: none;
+    margin: 10px;
+}
+#one{
+    background-image: url(../img/Aga_Khan_Bridge_in_Pune.jpg);
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    height: 100px;
+    width: 50px;
+    color: aliceblue;
+}
+#two{
+    background-image: url(../img/12.webp);
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    height: 100px;
+    width: 50px;
+    color: antiquewhite;
+}
+#three{
+    background-image: url(../img/Aga-Khan-Palace-Pune-India.webp);
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 100px;
+    width: 50px;
+    color: antiquewhite;
+}
+#four{
+    background-image: url(../img/65395942.webp);
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 100px;
+    width: 50px;
+    color: black;
+}
+#five{
+    background-image: url(../img/Pune\ street\ tree\ motorbike\ traffic.webp);
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 100px;
+    width: 50px;
+    color: black;
+}
+#six{
+    background-image: url(../img/Tallest-Building-in-Pune.jpg);
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 100px;
+    width: 50px;
+    color: antiquewhite;
+}
