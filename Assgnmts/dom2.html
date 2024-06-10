@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <ul id="parentUL"></ul>
+    <button onclick="addItem();">Click to Add items</button>
+    <ul id="parentUL1"></ul>
+    <button onclick="addArrayItem();">Click here</button>
+   <script>
+    function addItem(){
+        parentUL = document.getElementById('parentUL');
+        newLiItem = document.createElement('li');
+        textItem = document.createTextNode('New Li'); 
+         newLiItem.appendChild(textItem);
+        parentUL.appendChild(newLiItem);
+    }
+
+    function addArrayItem(){
+        arr = ['Mango','orange','apple','banana'];
+        parentUL1 = document.querySelector('#parentUL1');
+        arr.forEach(elemt => {
+            liList = document.createElement('li');
+            liItem = document.createTextNode(elemt);
+            liList.appendChild(liItem);
+            parentUL1.appendChild(liList);
+        });
+    }  
+
+   </script>
+</body>
+</html>

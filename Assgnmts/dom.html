@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .colorred{
+        color: bisque;
+    }
+</style>
+<body>
+    <p id="para">Paragraph</p>
+    <button onclick="changeContent();">Click here to text bold</button>
+    <p id="para1">Paragraph</p>
+    <button onclick="toggleBoldNormal();">Click here to text bold</button><br><br>
+    <p>change the bg color</p>
+    <button onclick="myFunction();">Set background color</button>
+    <script>
+        function changeContent(){
+            document.getElementById("changeContent").innerHTML="para";
+            document.getElementById("changeContent").className="blue";
+        }
+        function toggleBoldNormal()
+        {
+            var checkfont = document.getElementById("para1");
+            if(checkfont.style.fontWeight=='bold')
+            {
+            checkfont.style.fontWeight='normal';
+            }
+            else{
+                checkfont.style.fontWeight='bold';   
+            }
+        }
+        function myFunction() {
+         document.body.style.backgroundColor = "blue";
+        }
+    </script>
+</body>
+</html>
