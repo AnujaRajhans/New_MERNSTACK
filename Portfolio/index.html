@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="" id="header">
+        <div class="container">
+            <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+            <div class="header-text">
+                <h1>Hi, I'm Anuja Rajhans</h1>
+                <p>Full Stack Web Developer</p>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed minus accusamus eaque 
+                    maiores porro recusandae repellat architecto soluta ducimus aspernatur quo sunt unde laudantium exercitationem! Natus delectus vero illo perferendis.</p>
+                    <div class="tab-titles">
+                         <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                         <p class="tab-links " onclick="opentab('Experience')">Experience</p>
+                         <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>2024-Current </span><br>MERN Full Stack training at Wisdom Sprouts </li>
+                            <li><span>Student Coordinator</span><br>Student Coordinator at T&P Cell in college</li>
+                            <li><span>IT Engineer</span><br>Pursued Engineering in Jawaharlal Nehru Engineering College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks= document.getElementById("tablinks");
+        var tabcontents= document.getElementById("tabcontents");
+        function opentab(tabName){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+        }
+    </script>
+</body>
+</html>
