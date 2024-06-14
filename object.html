@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .card{
+    border: 2px solid black;
+    height: 500px;
+    width: 400px;
+    position: relative;
+    left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+  }
+.image img{
+    width: 200px;
+    padding: 20px;
+    position: relative;
+    margin-top: 2px ;
+}
+.text button{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+</style>
+    <button onclick="changeBg();">Set background color</button>
+<body>
+    <div class="card">
+        <div class="image">
+            <img src="../Assignments/ired.webp" alt="" id="imgg" >
+        </div>
+        <div class="text">
+            <button style="background-color: red; " onclick="redd();"></button>
+            <button style="background-color: black;" onclick="blackk();"></button>
+            <button style="background-color: gray;" onclick="grayy();"></button>
+        </div>
+    </div>
+    <script>
+        function changeBg(){
+            document.body.style.backgroundColor='Red';
+        }
+        function redd(){
+            document.getElementById("imgg").src="../Assignments/ired.webp";
+        }
+        function blackk(){
+            document.getElementById("imgg").src="../Assignments/iblack.webp";
+        }
+        function grayy(){
+            document.getElementById("imgg").src="../Assignments/igrey.webp";
+        }
+    </script>
+</body>
+</html>
