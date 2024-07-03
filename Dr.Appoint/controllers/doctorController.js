@@ -10,26 +10,26 @@ async function addDoctor(req,res){
         res.status(500).json(err);
     }
 }
-async function loginDoctor(req,res){
-   console.log(req.body);
-   try{
-    const result = await doctorModel.findOne({demail:req.body.demail,dpassword:req.body.dpassword});
-    if(!newDoctor){
-        res.status(201).send({message:'doctor not found',success:false});
-    }
-    const isMatch= await doctorModel.findOne({dpassword:req.body.dpassword});
+async function loginDoctor(req, res) {
+    console.log(req.body);
+    try{
+       const newDoctor = await doctorModel.findOne({demail: req.body.demail, dpassword: req.body.dpassword});
+        if(!newDoctor){
+            res.status(201).send({"message":"Doctor not found",success:false});
+        }
+    const isMatch = await doctorModel.findOne({dpassword: req.body.dpassword});
     if(!isMatch){
-        res.status(201).send({message:'wrong password',success:false});
+        res.status(201).send({"message":"Password is incorrect",success:false});
     }
     else{
-        result= {"message":"login successful", success:true}
+        result ={"message":"Login Success",success:true,id:newDoctor._id,name:newDoctor.dname}
         console.log(result);
-        res.status(201).send(result);
+        res.status(200).send(result);   
     }
-   }  
-   catch(err){
-     res.status(500).send(err);
-   } 
+     }
+    catch(err){
+        res.status(500).send(err);
+    }
 }
 async function getAllDoctor(req,res){
     try{
