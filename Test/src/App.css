@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  background-color:#EEF5FF;
+  min-height: 100vh;
+  align-items: center;
+}
+ 
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(1); 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; 
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  font-size: 2rem; 
+  color: white; 
+}
+
+.star-rating {
+  display: flex;
+  font-size: 1.5rem;
+  color: #f8c100;
+  justify-content: center;
+  align-items: center;
+}
+
+.star {
+  margin-right: 0.1rem; /* Space between stars */
+  color: #ddd; /* Color of the unfilled stars */
+}
+
+.star.filled {
+  color: #f8c100; 
+}
