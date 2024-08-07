@@ -1,0 +1,19 @@
+.userList{
+    float: left;
+    margin-top: 50px;
+
+}
+.link{
+    text-decoration: none;
+    border: 1px solid grey;
+}
+.card{
+    border: 1px solid grey;
+    margin-bottom: 10px;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(197, 126, 174, 0.2);
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
